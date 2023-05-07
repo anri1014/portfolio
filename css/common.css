@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  font-family: "makinas-4-square", "Meiryo", "メイリオ", "Hiragino Sans",
+    "ヒラギノ角ゴシック" sans-serif;
+  color: #333333;
+  line-height: 1;
+  font-feature-settings: "palt";
+}
+body {
+  background-color: #333333;
+}
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/*header*/
+header {
+  width: 100vw;
+}
+.header_inner {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 2.6vw 3.7vw 0;
+  z-index: 100;
+}
+.header_inner .header_logo {
+  width: 7.3vw;
+  max-width: 100px;
+}
+.header_inner nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.header_inner nav ul li {
+  margin-left: 35px;
+  list-style: none;
+}
+.header_inner nav ul li a {
+  font-size: 1.4vw;
+  font-family: "Silom", sans-serif;
+  color: #f28704;
+  -webkit-text-stroke: 1px #fff;
+}
+header .header_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+/*footer*/
+
+footer {
+  width: 100vw;
+  margin-top: 150px;
+}
+
+.contact_btn {
+  position: relative;
+  width: 20vw;
+  max-width: 272px;
+  height: 13vw;
+  max-height: 180px;
+  margin: 0 auto 200px;
+}
+.btn_text {
+  position: absolute;
+  top: -23%;
+  right: -23%;
+  width: 9vw;
+  max-width: 124px;
+}
+.btn_base {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn_click {
+  position: absolute;
+  top: -13%;
+  right: -10%;
+}
+.btn_click a {
+  display: block;
+  height: 100%;
+}
+.btn_click a img {
+  -webkit-filter: drop-shadow(3px 3px 3px #000);
+  -moz-filter: drop-shadow(3px 3px 3px #000);
+  -ms-filter: drop-shadow(3px 3px 3px #000);
+  filter: drop-shadow(3px 3px 3px #000);
+}
+
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.3vw 3.7vw 9.5vw;
+  background-color: #cbcbcb;
+}
+.footer_inner .footer_logo {
+  width: 15vw;
+  max-width: 200px;
+}
+.footer_inner nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer_inner nav ul li {
+  margin-left: 35px;
+  list-style: none;
+}
+.footer_inner nav ul li a {
+  font-size: 1.4vw;
+  font-family: "Silom", sans-serif;
+  color: #333333;
+  -webkit-text-stroke: 1px #fff;
+}

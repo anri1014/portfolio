@@ -1,0 +1,20 @@
+.sent .sent_wrap {
+  width: 100vw;
+  margin: 0 auto;
+}
+.sent .sent_wrap .sent_text {
+  margin: 0 auto 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+.sent .sent_wrap .sent_icon {
+  width: 16.1vw;
+  max-width: 220px;
+  margin: 0 auto 60px;
+}
+.sent .sent_wrap .sent_img {
+  width: 15vw;
+  max-width: 200px;
+  margin: 0 auto 30vw;
+}/*# sourceMappingURL=thanks.css.map */

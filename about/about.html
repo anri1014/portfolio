@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フロントエンドプログラマー兼デザイナー志望の金政杏里（かねまさ あんり）のポートフォリオサイトです。">
+    <meta name="keywords" content="金政杏里,フロントエンド,プログラマー,デザイナー,Web,Programer,Designer">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'umz6jaj',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/silom" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../about/css/about.css">
     <title>PIECE OF</title>
 </head>
 
@@ -12,7 +29,7 @@
     <header>
         <div class="header_inner">
             <a class="header_logo" href="">
-                <img src="images/logo-icon@2x.png" alt="ロゴアイコン">
+                <img src="../images/logo-icon@2x.png" alt="ロゴアイコン">
             </a>
             <nav>
                 <ul>
@@ -24,43 +41,48 @@
                 </ul>
             </nav>
         </div>
-        <div class="header_img"><img src="images/piece_pagetop_pc@2x.png" alt="パズルのピース"></div>
+        <div class="header_img"><img src="../images/piece_pagetop_pc@2x.png" alt="パズルのピース"></div>
     </header>
     <main>
         <section class="about_content">
             <h2>ABOUT</h2>
-            <div class="about_content_data"><img src="images/about-me-data-pc@2x.png" alt="名前：金政杏里（かねまさ あんり）
+            <div class="img_wrap">
+                <div class="wrap_data"><img src="../images/about-me-data-pc.svg" alt="名前：金政杏里（かねまさ あんり）
                 誕生日:1996/10/14
                 趣味:ゲーム、アウトドア 、アニメ、カフェ巡り
                 座右の銘:死ぬこと以外かすり傷"></div>
-            <div class="about_content_status"><img src="images/about-me-status@2x.png" alt="HP:100%、集中力:100%、向上心:100%">
-            </div>
-            <div class="about_content_comment"><img src="images/about-me-comment@2x.png" alt="「好奇心と楽しいの塊」。
+                <div class="wrap_status"><img src="../images/about-me-status.svg" alt="HP:100%、集中力:100%、向上心:100%">
+                </div>
+                <div class="wrap_comment"><img src="../images/about-me-comment.svg" alt="「好奇心と楽しいの塊」。
                 私を一言で言うとこんな感じの人間です。
                 どんなことにもチャレンジ精神とハングリー精神をもち、取り組んでいきます。
                 人との繋がりを大事にしているので、積極的にコミュニケーションとるように努めています。"></div>
-            <div class="about_content_myimg"><img src="images/my-img@2x-80.jpg" alt="プロフィール画像"></div>
-            <div class="about_content_color"><img src="images/about-me-color@2x.png" alt="オレンジ・紫・グレー"></div>
-            <div class="about_content_skill"><img src="images/about-me-skill@2x.png "
-                    alt=" SKILL:Illustrator Photoshop Dreamweaver VScode HTML CSS Javascript SASS  Extra skill:communication">
+                <div class="wrap_myimg"><img src="../images/my-img.svg" alt="プロフィール画像"></div>
+                <div class="wrap_color"><img src="../images/about-me-color.svg" alt="オレンジ・紫・グレー"></div>
+                <div class="wrap_skill"><img src="../images/about-me-skill.svg "
+                        alt=" SKILL:Illustrator Photoshop Dreamweaver VScode HTML CSS Javascript SASS  Extra skill:communication">
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="contact_btn">
-            <div class="contact_btn_base"><img src="images/contact-button-base@2x.png" alt=""></div>
-            <a class="contact_btn_click"><img src="images/contact-button-click@2x.png" alt="コンタクトボタン"></a>
+            <div class="btn_text"><img src="../images/contact-btn-clickhere@2x.png" alt="click the piece"></div>
+            <div class="btn_base"><img src="../images/contact-btn-base@2x.png" alt=""></div>
+            <div class="btn_click"><a><img src="../images/contact-btn-click@2x.png" alt="コンタクトボタン"></a></div>
         </div>
-        <div class="footer_logo"><img src="images/logo@2x.png" alt="PIECE OFのロゴ"></div>
-        <nav>
-            <ul>
-                <li><a href="">TOP</a></li>
-                <li><a href="">WORKS</a></li>
-                <li><a href="">SKILL</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="footer_inner">
+            <div class="footer_logo"><img src="../images/logo@2x.png" alt="PIECE OFのロゴ"></div>
+            <nav>
+                <ul>
+                    <li><a href="">TOP</a></li>
+                    <li><a href="">WORKS</a></li>
+                    <li><a href="">SKILL</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 

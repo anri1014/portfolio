@@ -11,9 +11,11 @@ dt,
 dd,
 ul,
 li {
-  font-family: "makinas-4-square", "Meiryo", "メイリオ", "Hiragino Sans",
-    "ヒラギノ角ゴシック" sans-serif;
-  color: #333333;
+  font-family: "makinas-4-square", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 16px;
   line-height: 1;
   font-feature-settings: "palt";
 }
@@ -67,7 +69,7 @@ header {
   -webkit-text-stroke: 1px #fff;
 }
 header .header_img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
@@ -140,4 +142,13 @@ footer {
   font-family: "Silom", sans-serif;
   color: #333333;
   -webkit-text-stroke: 1px #fff;
+}
+
+h2 {
+  margin: 0 auto 60px;
+  text-align: center;
+  font-family: "Silom", sans-serif;
+  color: #f28704;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 3.6vw;
 }

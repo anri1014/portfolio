@@ -1,0 +1,26 @@
+@charset "uft-8";
+$gray: #333333;
+$orange: #f28704;
+
+.sent{
+    .sent_wrap{
+        width: 100vw;
+        margin: 0 auto;
+        .sent_text{
+            margin: 0 auto 40px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .sent_icon{
+            width: 16.1vw;
+            max-width: 220px;
+            margin:0 auto 60px;
+        }
+        .sent_img{
+            width: 15vw;
+            max-width: 200px;
+            margin: 0 auto 30vw;
+        }
+    }
+}

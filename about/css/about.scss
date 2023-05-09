@@ -1,0 +1,53 @@
+@charset "uft-8";
+$gray: #333333;
+$orange: #f28704;
+
+.about_content{
+    .img_wrap{
+        position: relative;
+        width: 100vw;
+        height: 63vw;
+        .wrap_data{
+            position: absolute;
+            top: 0;
+            left: 3.7%;
+            width: 43%;
+            max-width: 585px;
+        }
+        .wrap_status{
+            position: absolute;
+            top: 33.6%;
+            left: 14.2%;
+            width: 19%;
+            max-width: 260px;
+        }
+        .wrap_comment{
+            position: absolute;
+            top: 64.4%;
+            left: 16.4%;
+            width: 34.8%;
+            max-width: 475px;
+        }
+        .wrap_myimg{
+            position: absolute;
+            top: 25.3%;
+            left: 38.6%;
+            width: 24.2%;
+            max-width: 330px;
+        }
+        .wrap_color{
+            position: absolute;
+            top: 1.7%;
+            right: 13%;
+            width: 21%;
+            max-width: 288px;
+        }
+        .wrap_skill{
+            position: absolute;
+            top: 54.7%;
+            right: 13%;
+            width: 17.1%;
+            max-width: 234px;
+        }
+    }
+}

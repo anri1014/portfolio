@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フロントエンドプログラマー兼デザイナー志望の金政杏里（かねまさ あんり）のポートフォリオサイトです。">
+    <meta name="keywords" content="金政杏里,フロントエンド,プログラマー,デザイナー,Web,Programer,Designer">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'umz6jaj',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/silom" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../works/css/works_life.css">
     <title>PIECE OF</title>
 </head>
 
@@ -12,7 +29,7 @@
     <header>
         <div class="header_inner">
             <a class="header_logo" href="">
-                <img src="images/logo-icon@2x.png" alt="ロゴアイコン">
+                <img src="../images/logo-icon@2x.png" alt="ロゴアイコン">
             </a>
             <nav>
                 <ul>
@@ -24,28 +41,26 @@
                 </ul>
             </nav>
         </div>
-        <div class="header_img"><img src="images/piece_pagetop_pc@2x.png" alt="パズルのピース"></div>
+        <div class="header_img"><img src="../images/piece_pagetop_pc@2x.png" alt="パズルのピース"></div>
     </header>
     <main>
-        <section class="pagetop">
-            <div><img src="images/piece_pagetop_pc@2x.png" alt="パズルのピース"></div>
-        </section>
         <section class="detail">
-            <h3>LIFE STYLE</h3>
-            <article class="img_wrap">
-                <div class="work_img"><img src="images/works-tetail-life@2x-80.jpg" alt="LIFEのサイトのトップページ"></div>
-            </article>
-            <div class="detail_inner">
-                <ul>
-                    <li><img src="images/works-detail-aboutmywork@2x.png" alt="aboutmy workのボタン"></li>
-                    <li><img src="images/works-detail-process@2x.png" alt="processのボタン"></li>
-                    <li><img src="images/works-detail-review@2x.png" alt="reviewのボタン"></li>
-                </ul>
+            <h2>LIFE STYLE</h2>
+            <div class="work_img"><img src="../images/works-detail-life@2x.png" alt="LIFEのサイトのトップページ"></div>
+            <article class="detail_wrap">
+                <div class="detail_circle">
+                    <ul>
+                        <li><img src="../images/works-detail-aboutmywork@2x.png" alt="aboutmy workのボタン"></li>
+                        <p class="btn_hover"><img src="../images/works-detail-aboutmywork-hover@2x.png"
+                                alt="aboutmy workのボタン"></p>
+                        <li><img src="../images/works-detail-process@2x.png" alt="processのボタン"></li>
+                        <li><img src="../images/works-detail-review@2x.png" alt="reviewのボタン"></li>
+                    </ul>
+                </div>
                 <div class="sammary">
                     <div class="sammary_inner">
-                        <img src="images/works-detail-flame-pc@2x.png" alt="ゲーム風のフレーム">
                         <div class="textarea">
-                            <div class="textarea_img"><img src="images/works-detail-life-img@2x-80.jpg" alt=""></div>
+                            <div class="textarea_img"><img src="../images/works-detail-life-img@2x.png" alt=""></div>
                             <p class="textarea_text">
                                 １０周年の美容院のリニューアルサイトを作成しました。
                                 幅広い年齢層がターゲットであることと、営業実績が長いことを考慮して、POPで可愛らしいイメージよりは綺麗で洗練された大人っぽい可愛らしさを意識しました。
@@ -56,24 +71,27 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
         <div class="contact_btn">
-            <div class="contact_btn_base"><img src="images/contact-button-base@2x.png" alt=""></div>
-            <a class="contact_btn_click"><img src="images/contact-button-click@2x.png" alt="コンタクトボタン"></a>
+            <div class="btn_text"><img src="../images/contact-btn-clickhere@2x.png" alt="click the piece"></div>
+            <div class="btn_base"><img src="../images/contact-btn-base@2x.png" alt=""></div>
+            <div class="btn_click"><a><img src="../images/contact-btn-click@2x.png" alt="コンタクトボタン"></a></div>
         </div>
-        <div class="footer_logo"><img src="images/logo@2x.png" alt="PIECE OFのロゴ"></div>
-        <nav>
-            <ul>
-                <li><a href="">TOP</a></li>
-                <li><a href="">WORKS</a></li>
-                <li><a href="">SKILL</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="footer_inner">
+            <div class="footer_logo"><img src="../images/logo@2x.png" alt="PIECE OFのロゴ"></div>
+            <nav>
+                <ul>
+                    <li><a href="">TOP</a></li>
+                    <li><a href="">WORKS</a></li>
+                    <li><a href="">SKILL</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 

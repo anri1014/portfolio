@@ -14,17 +14,17 @@ $orange: #f28704;
     }
     .detail_wrap{
         display: flex;
+        height: 80vw;
         background-image: url(../../images/works-detail-bg@2x.png);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         .detail_circle{
             position: relative;
-            width: 80vw;
-            height: 80vw;
+            flex: 4;
             border: solid 1px white;
             border-radius: 100%;
-            transform: translateX(-67%);
+            transform: translateX(-45%);
         
         ul{
             display: flex;
@@ -38,7 +38,7 @@ $orange: #f28704;
             list-style: none;
             li{
                 width: 18vw;
-                &:nth-child(3) &:nth-child(4){
+                &:nth-child(3){
                     margin-left: 20%;
                 }
                 &:hover{
@@ -61,23 +61,28 @@ $orange: #f28704;
         }
         }
         .sammary{
-            margin-top: 20%;
-            transform: translateX(-50%);
+            flex: 6;
             .sammary_inner{
                 position: relative;
-                width: 65vw;
+                width: 100%;
+                height: 100%;
                 background-image: url(../../images/works-detail-flame-pc@2x.png);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
                 .textarea{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-30%,-50%);
                     .textarea_img{
-                        width: 22vw;
+                        width: 80%;
                         margin: 0 auto;
                     }
                     .textarea_text{
-                        width: 27vw;
-                        margin: 0 auto;
+                        width: 80%;
+                        margin: 8% auto 0;
+                        line-height: 28px;
                     }
                 }
             }

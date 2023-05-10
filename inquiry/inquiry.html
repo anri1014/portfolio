@@ -48,36 +48,43 @@
             <h2>CONTACT</h2>
             <p>ご連絡お待ちしております。</p>
             <div class="contact_form">
-                <form action="">
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSep7mBGpp6poNWXWgfojlxcWhvhPimfrEVKZSjskh1CToVTZw/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
                     <table>
                         <tr>
                             <th class="contact_item">名前</th>
                             <td class="contact_body">
-                                <input type="text" name="名前" class="form_text">
+                                <input type="text" name="entry.740920738" class="form_text">
                             </td>
                         </tr>
                         <tr>
                             <th class="contact_item">企業名</th>
                             <td class="contact_body">
-                                <input type="text" name="企業名" class="form_text">
+                                <input type="text" name="entry.269034429" class="form_text">
                             </td>
                         </tr>
                         <tr>
                             <th class="contact_item">メールアドレス</th>
                             <td class="contact_body">
-                                <input type="email" name="メール" class="form_text">
+                                <input type="email" name="entry.1759195570" class="form_text">
                             </td>
                         </tr>
                         <tr>
                             <th class="contact_item">お問合せ内容</th>
                             <td class="contact_body">
-                                <input type="text" name="本文" class="form_textarea">
+                                <input type="text" name="entry.1200793542" class="form_textarea">
                             </td>
                         </tr>
                     </table>
                 </form>
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                    onload="if(submitted)  {window.location='thanks.html';}"></iframe>
             </div>
-            <a href="../inquiry/sent.html" class="send"><img src="../images/send-button@2x.png" alt="sendボタン"></a>
+            <button type="submit" class="send"><img src="../images/send-button@2x.png" alt="sendボタン"></button>
         </section>
 
     </main>

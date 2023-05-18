@@ -9,21 +9,21 @@ $orange: #f28704;
         text-align: center;
     }
     .contact_form{
-        width: 47.6%;
+        width: 658px;
         margin: 0 auto 100px;
         form{
             table{
                 width: 100%;
                 tr{
                     vertical-align: top;
-                    .contact_item{
-                        padding: 20px;
+                    th{
+                        padding: 0 20px 40px 0;
                         width: 30%;
                         font-size: 20px;
                         text-align: left;
                     }
-                    .contact_body{
-                        padding: 20px;
+                    td{
+                        padding: 0 20px 40px 0;
                         width: 70%;
                         .form_text{
                             width: 100%;
@@ -38,6 +38,9 @@ $orange: #f28704;
                             border-radius: 8px;
                         }
                     }
+                    &:last-child td{
+                        padding-bottom: 0;
+                    }
                 }
             }
         }
@@ -47,5 +50,42 @@ $orange: #f28704;
         width: 15vw;
         max-width: 200px;
         margin: 0 auto 150px;
+    }
+    @media screen and (max-width: 767px) {
+        p{
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .contact_form{
+            width: 80vw;
+            margin-bottom: 30px;
+            form{
+                table{
+                    th, td{
+                        display: block;
+                    }
+                    tr{
+                        th{
+                            width: 100%;
+                            padding: 0 0 10px 0;
+                            font-size: 14px;
+                        }
+                        td{
+                            width: 100%;
+                            padding: 0 0 25px 0;
+                            font-size: 14px;
+                            .form_textarea{
+                                height: 54vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .send{
+        width: 26.7vw;
+        min-width: 100px;
+        margin: 0 auto 100px;
     }
 }

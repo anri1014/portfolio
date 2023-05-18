@@ -3,6 +3,7 @@ $gray: #333333;
 $orange: #f28704;
 
 .about_content{
+    margin-bottom: 100px;
     .img_wrap{
         position: relative;
         width: 100vw;
@@ -13,6 +14,9 @@ $orange: #f28704;
             left: 3.7%;
             width: 43%;
             max-width: 585px;
+        }
+        .wrap_data_sp{
+            display: none;
         }
         .wrap_status{
             position: absolute;
@@ -42,12 +46,67 @@ $orange: #f28704;
             width: 21%;
             max-width: 288px;
         }
+        .wrap_color_sp{
+            display: none;
+        }
         .wrap_skill{
             position: absolute;
             top: 54.7%;
             right: 13%;
             width: 17.1%;
             max-width: 234px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .img_wrap{
+            height: 300vw;
+            .wrap_myimg{
+                top: 0;
+                left: 5.3vw;
+                width: 48vw;
+            }
+            .wrap_status{
+                top: 0;
+                right: 5.3vw;
+                left: auto;
+                width: 39vw;
+            }
+            .wrap_color{
+                display: none;
+            }
+            .wrap_color_sp{
+                display: block;
+                position: absolute;
+                top: 29vw;
+                right: 12vw;
+                width: 29vw;
+            }
+            .wrap_data{
+                display: none;;
+            }
+            .wrap_data_sp{
+                display: block;
+                position: absolute;
+                top: 58.9vw;
+                left: 50%;
+                transform: translateX(-58%);
+                width: 100vw;
+            }
+            .wrap_comment{
+                top: 132.3vw;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 93vw;
+                max-width: none;
+            }
+            .wrap_skill{
+                top: auto;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 84vw;
+                max-width: none;
+            }
         }
     }
 }

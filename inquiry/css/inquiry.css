@@ -4,7 +4,7 @@
   text-align: center;
 }
 .contact_content .contact_form {
-  width: 47.6%;
+  width: 658px;
   margin: 0 auto 100px;
 }
 .contact_content .contact_form form table {
@@ -13,31 +13,65 @@
 .contact_content .contact_form form table tr {
   vertical-align: top;
 }
-.contact_content .contact_form form table tr .contact_item {
-  padding: 20px;
+.contact_content .contact_form form table tr th {
+  padding: 0 20px 40px 0;
   width: 30%;
   font-size: 20px;
   text-align: left;
 }
-.contact_content .contact_form form table tr .contact_body {
-  padding: 20px;
+.contact_content .contact_form form table tr td {
+  padding: 0 20px 40px 0;
   width: 70%;
 }
-.contact_content .contact_form form table tr .contact_body .form_text {
+.contact_content .contact_form form table tr td .form_text {
   width: 100%;
   height: 25px;
   background: white;
   border-radius: 8px;
 }
-.contact_content .contact_form form table tr .contact_body .form_textarea {
+.contact_content .contact_form form table tr td .form_textarea {
   width: 100%;
   height: 23vw;
   background: white;
   border-radius: 8px;
+}
+.contact_content .contact_form form table tr:last-child td {
+  padding-bottom: 0;
 }
 .contact_content .send {
   display: block;
   width: 15vw;
   max-width: 200px;
   margin: 0 auto 150px;
+}
+@media screen and (max-width: 767px) {
+  .contact_content p {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .contact_content .contact_form {
+    width: 80vw;
+    margin-bottom: 30px;
+  }
+  .contact_content .contact_form form table th, .contact_content .contact_form form table td {
+    display: block;
+  }
+  .contact_content .contact_form form table tr th {
+    width: 100%;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+  }
+  .contact_content .contact_form form table tr td {
+    width: 100%;
+    padding: 0 0 25px 0;
+    font-size: 14px;
+  }
+  .contact_content .contact_form form table tr td .form_textarea {
+    height: 54vw;
+  }
+}
+.contact_content .send {
+  width: 26.7vw;
+  min-width: 100px;
+  margin: 0 auto 100px;
 }/*# sourceMappingURL=inquiry.css.map */

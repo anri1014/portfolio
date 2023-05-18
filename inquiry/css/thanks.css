@@ -1,3 +1,6 @@
+.sent {
+  margin: 0 auto 20vw;
+}
 .sent .sent_wrap {
   width: 100vw;
   margin: 0 auto;
@@ -16,5 +19,23 @@
 .sent .sent_wrap .sent_img {
   width: 15vw;
   max-width: 200px;
-  margin: 0 auto 30vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .sent {
+    margin: 0 auto 150px;
+  }
+  .sent .sent_wrap .sent_text {
+    margin: 0 auto 20px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .sent .sent_wrap .sent_icon {
+    width: 35.2vw;
+    margin: 0 auto 30px;
+  }
+  .sent .sent_wrap .sent_img {
+    width: 26.7vw;
+  }
 }/*# sourceMappingURL=thanks.css.map */

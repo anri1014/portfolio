@@ -21,6 +21,32 @@ header{
     }
 }
 }
+@media screen and (max-width: 767px) {
+    .top{
+        header{
+            .header_inner{
+                nav{
+                    ul{
+                        li{
+                            a{
+                            color: white;
+                            }
+                        }
+                    }
+                }
+                .sp_btn{
+                    span{
+                        background-color: $gray;
+                        &:before,
+                        &:after{
+                            background-color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 .top{
     position: relative;
@@ -33,6 +59,125 @@ header{
         left: 50%;
         transform: translate(-50%,-50%);
         width: 52vw;
+    }
+    .top_triangle{
+        position: absolute;
+        top: 30.7%;
+        left: 11.5%;
+        transform: translate(-50%, -50%);
+        width: 10vw;
+    }
+    .top_circle{
+        position: absolute;
+        bottom: -9.8%;
+        left: 11.8%;
+        transform: translate(-50%, -50%);
+        width: 10vw;
+    }
+    .top_closs{
+        position: absolute;
+        bottom: 14.4%;
+        left: 34.8%;
+        transform: translate(-50%, -50%);
+        width: 10vw;
+    }
+    .top_square{
+        position: absolute;
+        bottom: 14.5%;
+        right: 17%;
+        transform: translate(-50%, -50%);
+        width: 10vw;
+    }
+    .top_w{
+        position: absolute;
+        bottom: 14.8%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        width: 3.5vw;
+    }
+    .top_a{
+        position: absolute;
+        bottom: -3px;
+        left: 49.9%;
+        transform: translate(-50%, -50%);
+        width: 2.5vw;
+    }
+    .top_s{
+        position: absolute;
+        bottom: 0%;
+        left: 57.4%;
+        transform: translate(-50%, -50%);
+        width: 2vw;
+    }
+    .top_d{
+        position: absolute;
+        bottom: 7px;
+        left: 65.3%;
+        transform: translate(-50%, -50%);
+        width: 2vw;
+    }
+    .sp_top{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .top{
+        .top_img, .top_logo{
+            display: none;;
+        }
+        .sp_top{
+            display: block;
+        }
+        .sp_img{
+            display: block;
+            width: 100vw;
+        }
+        .sp_logo{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 66.6vw;
+        }
+        .top_triangle, .top_circle, .top_closs, .top_square{
+            width: 16.5vw;
+        }
+        .top_triangle{
+            top: 20.1%;
+            left: 18.7%;
+        }
+        .top_circle{
+            top: 74.2%;
+            left: 6.32%;
+        }
+        .top_closs{
+            bottom: 1.5%;
+            left: 31.3%;
+        }
+        .top_square{
+            bottom: 10.4%;
+            left: 56.3%;
+        }
+        .top_w{
+            bottom: 9.3%;
+            left: 81.6%;
+            width: 5.5vw;
+        }
+        .top_a{
+            bottom: 0.5%;
+            left: 68.7%;
+            width: 3.5vw;
+        }
+        .top_s{
+            bottom: 0.3%;
+            left: 80.7%;
+            width: 3vw;
+        }
+        .top_d{
+            bottom: 0.3%;
+            left: 93.3%;
+            width: 3.5vw;
+        }
     }
 }
 
@@ -48,8 +193,22 @@ header{
         .works_content{
             width: 400px;
             margin-bottom: 50px;
+            overflow: hidden;
             .content_img{
+                position: relative;
                 width: 100%;
+            }
+            .content_img:before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url(../images/read-more-hover@2x.png);
+                background-size: contain;
+                transition: top 0.35s;
             }
             .content_text{
                 padding: 20px;
@@ -65,7 +224,7 @@ header{
                 .content_category{
                     display: flex;
                     justify-content: flex-start;
-                    span{
+                    .category_item{
                         display: block;
                         margin-right: 10px;
                         padding: 5px 10px;
@@ -75,6 +234,13 @@ header{
                         color: white;
                     }
                 }
+            }
+            &:hover .content_img:before{
+                top: 0;
+                
+            }
+            &:last-child{
+                margin-bottom: 0;
             }
         }
         }
@@ -86,12 +252,42 @@ header{
         }
     }
 
+    @media  screen and (max-width: 767px) {
+        .works{
+            margin: 40px auto 70px;
+            .works_inner{
+                margin:0 auto 30px;
+                .works_content{
+                    margin-bottom: 20px;
+                    .content_text{
+                        padding: 15px 20px;
+                        h4{
+                            font-size: 16px;
+                        }
+                        .content_category{
+                            .category_item{
+                                margin-right: 6px;                
+                            }
+                        }
+                    }
+                }
+            }
+            .works_btn{
+                width: 40vw;
+                min-width: 150px;
+            }
+        }
+    }
+
     /*skill*/
     .skill{
         margin-bottom: 120px;
         background-color: $orange;
         .piece_top{
-            transform: scale(-1, 1);
+            transform: scale(-1, 1) translateY(-1px);
+        }
+        .piece_top_sp{
+            display: none;
         }
         h2{
             margin: -120px 0 140px;
@@ -99,6 +295,7 @@ header{
         }
         ul{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             width: 80%;
             margin: 0 auto 70px;
@@ -134,7 +331,66 @@ header{
             }
         }
         .piece_bottom{
-            transform: scale(1, -1);
+            transform: scale(1, -1) translateY(-1px);
+        }
+        .piece_bottom_sp{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .skill{
+            margin-bottom: 70px;
+            .piece_top{
+                display: none;
+            }
+            .piece_top_sp{
+                display: block;
+                position: relative;
+                top: -1px;
+                right: -1px;
+                width: 40.8%;
+                margin: 0 0 0 auto;
+                transform: scale(-1, 1);
+            }
+            h2{
+                margin: 0 auto 30px;
+            }
+            ul{
+                margin: 0 auto 50px;
+                li{
+                    width: 80vw;
+                    margin-bottom: 40px;
+                    .skill_icon{
+                        width: 40vw;
+                        padding-bottom: 20px;
+                    }
+                    h3{
+                        padding-bottom: 5px;
+                        font-size: 20px;                        
+                    }
+                    p{
+                        padding-bottom: 15px;
+                        font-size: 12px
+                    }
+                    .skill_text{
+                        width: 100%;
+                        font-size: 15px;
+                        line-height: 26px;
+                    }
+                }
+            }
+            .piece_bottom{
+                display: none;
+            }
+            .piece_bottom_sp{
+                display: block;
+                position: relative;
+                bottom: -1px;
+                left: -1px;
+                width: 40.8%;
+                margin: 0 auto 0 0;
+                transform: scale(1, -1);
+            }
         }
     }
 
@@ -168,6 +424,35 @@ header{
         }
     }
 
+    @media screen and (max-width: 767px) {
+        .about{
+            margin: 0 auto 70px;
+            .about_inner{
+                flex-direction: column;
+                align-items: center;
+                .about_img{
+                    width: 40vw;
+                    margin: 0 auto 20px;
+                    padding: 0;;
+                }
+                .text_wrap{
+                    width: 80%;
+                    .text{
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 0 0 30px 0;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                    .btn{
+                        width: 40vw;
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+    }
+
     /*contect*/
 .contact{
     p{
@@ -175,6 +460,14 @@ header{
       margin-bottom: 80px;
       font-size: 20px;
       text-align: center;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .contact{
+        p{
+            margin-bottom: 80px;
+            font-size: 16px;
+        }
     }
   }
   

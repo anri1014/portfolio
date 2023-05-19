@@ -57,15 +57,6 @@ $orange: #f28704;
                         display: block;
                         opacity: 1;
                     }
-                    :hover.textarea_aboutmywork{
-                        display: none;
-                    }
-                    :hover.textarea_process{
-                        display: block;
-                    }
-                    :hover.textarea_review{
-                        display: none;
-                    }
                 }
                 &:nth-child(3){
                     position: absolute;
@@ -76,19 +67,9 @@ $orange: #f28704;
                     :hover.btn_hover{
                         display: block;
                         opacity: 1;
-                    
-                    }
-                    :hover.textarea_aboutmywork{
-                        display: none;
-                    }
-                    :hover.textarea_process{
-                        display: none;
-                    }
-                    :hover.textarea_review{
-                        display: block;
                     }
                 }
-                .btn_img:hover{
+                :hover.btn_img{
                     opacity: 0;
                 }
                 .btn_hover{
@@ -133,13 +114,9 @@ $orange: #f28704;
                         }
                     }
                 }
-                .textarea_process{
+                #process, #review{
                     display: none;
                 }
-                .textarea_review{
-                    display: none;
-                }
-                
             }
         }
         @media screen and (max-width: 767px) {

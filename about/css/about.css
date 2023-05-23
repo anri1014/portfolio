@@ -86,22 +86,18 @@
     display: block;
     position: absolute;
     top: 58.9vw;
-    left: 50%;
-    transform: translateX(-58%);
+    left: -5%;
     width: 100vw;
   }
   .about_content .img_wrap .wrap_comment {
     top: 132.3vw;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 5%;
     width: 93vw;
     max-width: none;
   }
   .about_content .img_wrap .wrap_skill {
     top: auto;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 84vw;
     max-width: none;
   }

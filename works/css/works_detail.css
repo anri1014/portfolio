@@ -46,6 +46,8 @@
 .detail .detail_wrap .detail_circle ul li:nth-child(1) :hover.btn_hover {
   display: block;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1, 1.1);
 }
 .detail .detail_wrap .detail_circle ul li:nth-child(2) {
   position: absolute;
@@ -56,6 +58,8 @@
 .detail .detail_wrap .detail_circle ul li:nth-child(2) :hover.btn_hover {
   display: block;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1, 1.1);
 }
 .detail .detail_wrap .detail_circle ul li:nth-child(3) {
   position: absolute;
@@ -67,6 +71,8 @@
 .detail .detail_wrap .detail_circle ul li:nth-child(3) :hover.btn_hover {
   display: block;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1, 1.1);
 }
 .detail .detail_wrap .detail_circle ul li :hover.btn_img {
   opacity: 0;
@@ -115,6 +121,12 @@
 .detail .detail_wrap .summary .summary_inner #process, .detail .detail_wrap .summary .summary_inner #review {
   display: none;
 }
+.detail .detail_wrap .summary {
+  display: none;
+}
+.detail .detail_wrap .summary.selected {
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .detail .detail_wrap {
     height: 120vw;
@@ -123,7 +135,7 @@
     width: 130vw;
     height: 130vw;
     position: fixed;
-    top: -100%;
+    top: -100vw;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;

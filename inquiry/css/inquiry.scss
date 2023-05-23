@@ -2,90 +2,98 @@
 $gray: #333333;
 $orange: #f28704;
 
-.contact_content{
-    p{
-        margin-bottom: 50px;
-        font-size: 18px;
-        text-align: center;
-    }
-    .contact_form{
-        width: 658px;
-        margin: 0 auto 100px;
-        form{
-            table{
-                width: 100%;
-                tr{
-                    vertical-align: top;
-                    th{
-                        padding: 0 20px 40px 0;
-                        width: 30%;
-                        font-size: 20px;
-                        text-align: left;
-                    }
-                    td{
-                        padding: 0 20px 40px 0;
-                        width: 70%;
-                        .form_text{
-                            width: 100%;
-                            height: 25px;
-                            background: white;
-                            border-radius: 8px;
+.inquiry{
+
+    .contact_content{
+        p{
+            margin-bottom: 50px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .contact_form{
+            width: 658px;
+            margin: 0 auto 100px;
+            form{
+                table{
+                    width: 100%;
+                    tr{
+                        vertical-align: top;
+                        th{
+                            padding: 0 20px 40px 0;
+                            width: 30%;
+                            font-size: 20px;
+                            text-align: left;
                         }
-                        .form_textarea{
-                            width: 100%;
-                            height: 23vw;
-                            background: white;
-                            border-radius: 8px;
+                        td{
+                            padding: 0 20px 40px 0;
+                            width: 70%;
+                            .form_text{
+                                width: 100%;
+                                height: 25px;
+                                padding: 3%;
+                                background: white;
+                                border-radius: 8px;
+                                font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+                            }
+                            .form_textarea{
+                                width: 100%;
+                                padding: 3%;
+                                background: white;
+                                border-radius: 8px;
+                                font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+                            }
                         }
-                    }
-                    &:last-child td{
-                        padding-bottom: 0;
+                        &:last-child td{
+                            padding-bottom: 0;
+                        }
                     }
                 }
             }
         }
-    }
-    .send{
-        display: block;
-        width: 15vw;
-        max-width: 200px;
-        margin: 0 auto 150px;
-    }
-    @media screen and (max-width: 767px) {
-        p{
-            margin-bottom: 20px;
-            font-size: 15px;
+        .send{
+            display: block;
+            width: 15vw;
+            max-width: 200px;
+            margin: 0 auto 150px;
         }
-        .contact_form{
-            width: 80vw;
-            margin-bottom: 30px;
-            form{
-                table{
-                    th, td{
-                        display: block;
-                    }
-                    tr{
-                        th{
-                            width: 100%;
-                            padding: 0 0 10px 0;
-                            font-size: 14px;
+        @media screen and (max-width: 767px) {
+            p{
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            .contact_form{
+                width: 80vw;
+                margin-bottom: 30px;
+                form{
+                    table{
+                        th, td{
+                            display: block;
                         }
-                        td{
-                            width: 100%;
-                            padding: 0 0 25px 0;
-                            font-size: 14px;
-                            .form_textarea{
-                                height: 54vw;
+                        tr{
+                            th{
+                                width: 100%;
+                                padding: 0 0 10px 0;
+                                font-size: 14px;
+                            }
+                            td{
+                                width: 100%;
+                                padding: 0 0 25px 0;
+                                font-size: 14px;
                             }
                         }
                     }
                 }
             }
         }
+        .send{
+            width: 26.7vw;
+            min-width: 100px;
+            margin: 0 auto 100px;
+        }
     }
-    .send{
-        width: 26.7vw;
-        min-width: 100px;
-        margin: 0 auto 100px;
+    footer{
+        .contact_btn{
+            display: none;
+        }
     }
 }

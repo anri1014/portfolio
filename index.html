@@ -5,24 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="フロントエンドプログラマー兼デザイナー志望の金政杏里（かねまさ あんり）のポートフォリオサイトです。">
-    <meta name="keywords" content="金政杏里,フロントエンド,プログラマー,デザイナー,Web,Programer,Designer">
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'umz6jaj',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
+    <title>PIECE OF｜フロントエンドエンジニア兼デザイナーの金政杏里（かねまさ あんり）のポートフォリオサイトです。</title>
+    <meta name="description" content="フロントエンドエンジニア兼デザイナーの金政杏里（かねまさ あんり）のポートフォリオサイトです。">
+    <meta name="keywords" content="金政杏里,フロントエンド,エンジニア、プログラマー,デザイナー,Web,Programer,Designer">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/silom" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
-    <title>PIECE OF</title>
 </head>
 
 <body class="top">
@@ -58,7 +49,11 @@
     <main>
         <section class="top" id="top">
             <div class="top_img"><img src="images/top-img-pc@2x.png" alt="パズルとゲームのメインビジュアル"></div>
-            <h1 class="top_logo"><img src="images/logo@2x.png" alt="PIECE OFのロゴ"></h1>
+            <div class="top_logo" style="background-image: url(images/logo@2x.png);">
+                <div class="channel r"></div>
+                <div class="channel g"></div>
+                <div class="channel b"></div>
+            </div>
             <div class="top_triangle"><img src="images/triangle.svg" alt=""></div>
             <div class="top_circle"><img src="images/circle.svg" alt=""></div>
             <div class="top_closs"><img src="images/closs.svg" alt=""></div>
@@ -69,7 +64,11 @@
             <div class="top_d"><img src="images/d.svg" alt=""></div>
             <div class="sp_top">
                 <div class="sp_img"><img src="images/sp_topimg@2x.png" alt="パズルとゲームのメインビジュアル"></div>
-                <h1 class="sp_logo"><img src="images/logo@2x.png" alt="PIECE OFのロゴ"></h1>
+                <div class="top_logo sp_logo" style="background-image: url(images/logo@2x.png);">
+                    <div class="channel r"></div>
+                    <div class="channel g"></div>
+                    <div class="channel b"></div>
+                </div>
             </div>
         </section>
         <section class="works" id="works">
@@ -125,12 +124,13 @@
             <a class="works_btn" href="./works/index.html"><img src="images/read-more@2x.png" alt="read moreのボタン"></a>
         </section>
         <section class="skill" id="skill">
-            <div class="piece_top"><img src="images/piece-pagetop-pc.svg" alt="パズルのピース"></div>
+            <div class="piece_top"><img src="images/piece_pagetop_pc@2x.png" alt="パズルのピース"></div>
             <div class="piece_top_sp"><img src="images/piece_skill_sp@2x.png" alt="パズルのピース"></div>
             <h2>SKILL</h2>
             <ul>
                 <li>
-                    <div class="skill_icon"><img src="images/cording@2x.png" alt="コーディングのアイコン"></div>
+                    <div class="skill_icon wow animate__animated animate__bounceIn"><img src="images/cording@2x.png"
+                            alt="コーディングのアイコン"></div>
                     <h3>CORDING</h3>
                     <p>コーディング</p>
                     <div class="skill_text">
@@ -140,7 +140,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="skill_icon"><img src="images/design@2x.png" alt="デザインのアイコン"></div>
+                    <div class="skill_icon wow animate__animated animate__bounceIn"><img src="images/design@2x.png"
+                            alt="デザインのアイコン"></div>
                     <h3>DESIGN</h3>
                     <p>デザイン</p>
                     <div class="skill_text">
@@ -151,7 +152,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="skill_icon"><img src="images/ambitious@2x.png" alt="向上心のアイコン"></div>
+                    <div class="skill_icon wow animate__animated animate__bounceIn"><img src="images/ambitious@2x.png"
+                            alt="向上心のアイコン"></div>
                     <h3>AMBITIOUS</h3>
                     <p>向上心</p>
                     <div class="skill_text">
@@ -162,12 +164,12 @@
                     </div>
                 </li>
             </ul>
-            <div class="piece_bottom"><img src="images/piece-pagetop-pc.svg" alt="パズルのピース"></div>
+            <div class="piece_bottom"><img src="images/piece_pagetop_pc@2x.png" alt="パズルのピース"></div>
             <div class="piece_bottom_sp"><img src="images/piece_skill_sp@2x.png" alt="パズルのピース"></div>
         </section>
         <section class="about" id="about">
             <h2>ABOUT</h2>
-            <div class="about_inner">
+            <div class="about_inner wow animate__animated animate__bounceIn">
                 <div class="about_img"><img src="images/me-img@2x.png" alt="プロフィール画像"></div>
                 <div class="text_wrap">
                     <div class="text">
@@ -212,7 +214,11 @@
             </nav>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="./js/index.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </footer>
 
 </body>

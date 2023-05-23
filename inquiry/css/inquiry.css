@@ -1,77 +1,80 @@
-.contact_content p {
+.inquiry .contact_content p {
   margin-bottom: 50px;
   font-size: 18px;
   text-align: center;
 }
-.contact_content .contact_form {
+.inquiry .contact_content .contact_form {
   width: 658px;
   margin: 0 auto 100px;
 }
-.contact_content .contact_form form table {
+.inquiry .contact_content .contact_form form table {
   width: 100%;
 }
-.contact_content .contact_form form table tr {
+.inquiry .contact_content .contact_form form table tr {
   vertical-align: top;
 }
-.contact_content .contact_form form table tr th {
+.inquiry .contact_content .contact_form form table tr th {
   padding: 0 20px 40px 0;
   width: 30%;
   font-size: 20px;
   text-align: left;
 }
-.contact_content .contact_form form table tr td {
+.inquiry .contact_content .contact_form form table tr td {
   padding: 0 20px 40px 0;
   width: 70%;
 }
-.contact_content .contact_form form table tr td .form_text {
+.inquiry .contact_content .contact_form form table tr td .form_text {
   width: 100%;
   height: 25px;
+  padding: 3%;
   background: white;
   border-radius: 8px;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
-.contact_content .contact_form form table tr td .form_textarea {
+.inquiry .contact_content .contact_form form table tr td .form_textarea {
   width: 100%;
-  height: 23vw;
+  padding: 3%;
   background: white;
   border-radius: 8px;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
-.contact_content .contact_form form table tr:last-child td {
+.inquiry .contact_content .contact_form form table tr:last-child td {
   padding-bottom: 0;
 }
-.contact_content .send {
+.inquiry .contact_content .send {
   display: block;
   width: 15vw;
   max-width: 200px;
   margin: 0 auto 150px;
 }
 @media screen and (max-width: 767px) {
-  .contact_content p {
+  .inquiry .contact_content p {
     margin-bottom: 20px;
     font-size: 15px;
   }
-  .contact_content .contact_form {
+  .inquiry .contact_content .contact_form {
     width: 80vw;
     margin-bottom: 30px;
   }
-  .contact_content .contact_form form table th, .contact_content .contact_form form table td {
+  .inquiry .contact_content .contact_form form table th, .inquiry .contact_content .contact_form form table td {
     display: block;
   }
-  .contact_content .contact_form form table tr th {
+  .inquiry .contact_content .contact_form form table tr th {
     width: 100%;
     padding: 0 0 10px 0;
     font-size: 14px;
   }
-  .contact_content .contact_form form table tr td {
+  .inquiry .contact_content .contact_form form table tr td {
     width: 100%;
     padding: 0 0 25px 0;
     font-size: 14px;
   }
-  .contact_content .contact_form form table tr td .form_textarea {
-    height: 54vw;
-  }
 }
-.contact_content .send {
+.inquiry .contact_content .send {
   width: 26.7vw;
   min-width: 100px;
   margin: 0 auto 100px;
+}
+.inquiry footer .contact_btn {
+  display: none;
 }/*# sourceMappingURL=inquiry.css.map */

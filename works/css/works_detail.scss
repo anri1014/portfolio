@@ -46,6 +46,8 @@ $orange: #f28704;
                     :hover.btn_hover{
                         display: block;
                         opacity: 1;
+                        transition: all 0.3s ease-in-out;
+                        transform: scale(1.1, 1.1);
                     }
                 }
                 &:nth-child(2){
@@ -56,6 +58,8 @@ $orange: #f28704;
                     :hover.btn_hover{
                         display: block;
                         opacity: 1;
+                        transition: all 0.3s ease-in-out;
+                        transform: scale(1.1, 1.1);
                     }
                 }
                 &:nth-child(3){
@@ -67,6 +71,8 @@ $orange: #f28704;
                     :hover.btn_hover{
                         display: block;
                         opacity: 1;
+                        transition: all 0.3s ease-in-out;
+                        transform: scale(1.1, 1.1);
                     }
                 }
                 :hover.btn_img{
@@ -119,13 +125,19 @@ $orange: #f28704;
                 }
             }
         }
+        .summary{
+            display: none;;
+        }
+        .summary.selected {
+            display: block;
+          }
         @media screen and (max-width: 767px) {
             height: 120vw;
             .detail_circle{
                 width: 130vw;
                 height: 130vw;
                 position: fixed;
-                top: -100%;
+                top: -100vw;
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 10;

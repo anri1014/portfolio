@@ -48,18 +48,156 @@ header{
     }
 }
 
+@function rand($min, $max) {
+    @return random() * ($max - $min) + $min;
+  }
+  
+  $animation-duration: 3s;
+  $glitch-duration: 20%;
+  $glitch-frequency: 10;
+  $glitch-interval: $glitch-duration / $glitch-frequency;
+  
+  @mixin rgb-shift($name) {
+    @keyframes rgb-shift-#{$name} {
+      @for $i from 0 to $glitch-frequency {
+        #{$i * $glitch-interval} {
+          transform: translate(
+            #{rand(-2, 2) * 1%},
+            #{rand(-0.5, 0.5) * 1%}
+          );
+        }
+      }
+  
+      #{$glitch-duration}, 100% {
+        transform: none;
+      }
+    }
+  
+    animation: rgb-shift-#{$name} $animation-duration steps(1, jump-end) infinite alternate both;
+  }
+  
+  @mixin glitch($name) {
+    @keyframes glitch-#{$name} {
+      @for $i from 0 to $glitch-frequency {
+        $left: 0%;
+        $right: 100%;
+        $top: rand(0, 90) * 1%;
+        $bottom: $top + rand(1, 10) * 1%;
+  
+        #{$i * $glitch-interval} {
+          clip-path: polygon(
+            $left $top,
+            $right $top,
+            $right $bottom,
+            $left $bottom
+          );
+          transform: translate(
+            #{rand(-8, 8) * 1%},
+            #{rand(-0.5, 0.5) * 1%}
+          );
+        }
+      }
+  
+      #{$glitch-duration}, 100% {
+        clip-path: none;
+        transform: none;
+      }
+    }
+  
+    animation: glitch-#{$name} $animation-duration linear infinite alternate both;
+  }
 .top{
     position: relative;
     .top_img{
         width: 100vw;
     }
     .top_logo{
+        background: #000 no-repeat center;
+        background-size: 0;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        width: 52vw;
+        transform: translate(-50%, -45%);
+        width: 51vw;
+        height: 100%;
+        mask-image: url(../images/logo@2x.png);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        -webkit-mask-image: url(../images/logo@2x.png);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        &::before,
+        &::after,
+        .channel{
+            background: inherit;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            mix-blend-mode: screen;
+            &::before {
+                @include glitch(before);
+                content: "";
+              }
+            
+              &::after {
+                @include glitch(after);
+                content: "";
+              }
+        }
+        .channel{
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                mix-blend-mode: multiply;
+            }
+        }
+        .r{
+            @include rgb-shift(r);
+            &::before{
+                background-color: #f00;
+            }
+        }
+        .g {
+            @include rgb-shift(g);
+            &::before {
+              background: #0f0;
+            }
+          }
+          
+          .b {
+            @include rgb-shift(b);
+            &::before {
+              background: #00f;
+            }
+        }
     }
+    .top_triangle, .top_circle, .top_closs, .top_square {
+        animation: neon 2s ease infinite;
+        -moz-animation: neon 2s ease infinite;
+        -webkit-animation: neon 2s ease infinite;
+      }
+      
+      @keyframes neon {
+        0%,
+        100% {
+          text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+          color: #FED128;
+        }
+        50% {
+          text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+          color: #806914;
+        }
+      }
     .top_triangle{
         position: absolute;
         top: 30.7%;
@@ -122,8 +260,8 @@ header{
 }
 @media screen and (max-width: 767px) {
     .top{
-        .top_img, .top_logo{
-            display: none;;
+        .top_img{
+            display: none;
         }
         .sp_top{
             display: block;
@@ -132,7 +270,9 @@ header{
             display: block;
             width: 100vw;
         }
-        .sp_logo{
+        .top-logo.sp_logo{
+            background-color: #000;
+            display: block;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -207,7 +347,7 @@ header{
                 width: 100%;
                 height: 100%;
                 background-image: url(../images/read-more-hover@2x.png);
-                background-size: contain;
+                background-size: cover;
                 transition: top 0.35s;
             }
             .content_text{
@@ -347,7 +487,6 @@ header{
                 display: block;
                 position: relative;
                 top: -1px;
-                right: -1px;
                 width: 40.8%;
                 margin: 0 0 0 auto;
                 transform: scale(-1, 1);

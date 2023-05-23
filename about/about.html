@@ -5,24 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="フロントエンドプログラマー兼デザイナー志望の金政杏里（かねまさ あんり）のポートフォリオサイトです。">
-    <meta name="keywords" content="金政杏里,フロントエンド,プログラマー,デザイナー,Web,Programer,Designer">
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'umz6jaj',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
+    <title>ABOUT｜PIECE OF</title>
+    <meta name="description" content="金政杏里（かねまさあんり）についての自己紹介です。">
+    <meta name="keywords" content="金政杏里,フロントエンド,エンジニア,プログラマー,デザイナー,Web,Programer,Designer">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/silom" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../about/css/about.css">
-    <title>PIECE OF</title>
 </head>
 
 <body class="work">
@@ -59,24 +50,31 @@
         <section class="about_content">
             <h2>ABOUT</h2>
             <div class="img_wrap">
-                <div class="wrap_data"><img src="../images/about-me-data-pc.svg" alt="名前：金政杏里（かねまさ あんり）
+                <div class="wrap_data wow animate__animated animate__bounceIn"><img src="../images/about-me-data-pc.svg"
+                        alt="名前：金政杏里（かねまさ あんり）
                 誕生日:1996/10/14
                 趣味:ゲーム、アウトドア 、アニメ、カフェ巡り
                 座右の銘:死ぬこと以外かすり傷"></div>
-                <div class="wrap_data_sp"><img src="../images/about-me-data-sp@2x.png" alt="名前：金政杏里（かねまさ あんり）
+                <div class="wrap_data_sp wow animate__animated animate__bounceIn"><img
+                        src="../images/about-me-data-sp@2x.png" alt="名前：金政杏里（かねまさ あんり）
                     誕生日:1996/10/14
                     趣味:ゲーム、アウトドア 、アニメ、カフェ巡り
                     座右の銘:死ぬこと以外かすり傷"></div>
-                <div class="wrap_status"><img src="../images/about-me-status.svg" alt="HP:100%、集中力:100%、向上心:100%">
+                <div class="wrap_status wow animate__animated animate__bounceIn"><img
+                        src="../images/about-me-status.svg" alt="HP:100%、集中力:100%、向上心:100%">
                 </div>
-                <div class="wrap_comment"><img src="../images/about-me-comment.svg" alt="「好奇心と楽しいの塊」。
+                <div class="wrap_comment wow animate__animated animate__bounceIn"><img
+                        src="../images/about-me-comment.svg" alt="「好奇心と楽しいの塊」。
                 私を一言で言うとこんな感じの人間です。
                 どんなことにもチャレンジ精神とハングリー精神をもち、取り組んでいきます。
                 人との繋がりを大事にしているので、積極的にコミュニケーションとるように努めています。"></div>
-                <div class="wrap_myimg"><img src="../images/my-img.svg" alt="プロフィール画像"></div>
-                <div class="wrap_color"><img src="../images/about-me-color.svg" alt="オレンジ・紫・グレー"></div>
-                <div class="wrap_color_sp"><img src="../images/about-color-sp@2x.png" alt="オレンジ・紫・グレー"></div>
-                <div class="wrap_skill"><img src="../images/about-me-skill.svg "
+                <div class="wrap_myimg wow animate__animated animate__bounceIn"><img src="../images/my-img.svg"
+                        alt="プロフィール画像"></div>
+                <div class="wrap_color wow animate__animated animate__bounceIn"><img src="../images/about-me-color.svg"
+                        alt="オレンジ・紫・グレー"></div>
+                <div class="wrap_color_sp wow animate__animated animate__bounceIn"><img
+                        src="../images/about-color-sp@2x.png" alt="オレンジ・紫・グレー"></div>
+                <div class="wrap_skill wow animate__animated animate__bounceIn"><img src="../images/about-me-skill.svg "
                         alt=" SKILL:Illustrator Photoshop Dreamweaver VScode HTML CSS Javascript SASS  Extra skill:communication">
                 </div>
             </div>
@@ -101,7 +99,11 @@
             </nav>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="../js/index.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </footer>
 </body>
 

@@ -23,7 +23,7 @@
   width: 100%;
   height: 100%;
   background-image: url(../../images/read-more-hover@2x.png);
-  background-size: contain;
+  background-size: cover;
   transition: top 0.35s;
 }
 .works .works_inner .works_content .content_text {

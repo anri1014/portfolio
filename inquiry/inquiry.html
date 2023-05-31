@@ -56,9 +56,9 @@
                     method="post" target="hidden_iframe" onsubmit="submitted=true;">
                     <table>
                         <tr>
-                            <th>名前</th>
+                            <th>*名前</th>
                             <td>
-                                <input type="text" name="entry.740920738" class="form_text">
+                                <input type="text" name="entry.740920738" class="form_text" required>
                             </td>
                         </tr>
                         <tr>
@@ -68,26 +68,27 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>メールアドレス</th>
+                            <th>*メールアドレス</th>
                             <td>
-                                <input type="email" name="entry.1759195570" class="form_text">
+                                <input type="email" name="entry.1759195570" class="form_text" required>
                             </td>
                         </tr>
                         <tr>
-                            <th>お問合せ内容</th>
+                            <th>*お問合せ内容</th>
                             <td>
-                                <textarea rows="15" name="entry.1200793542" class="form_textarea"></textarea>
+                                <textarea rows="15" name="entry.1200793542" class="form_textarea" required></textarea>
                             </td>
                         </tr>
                     </table>
                 </form>
+                <button type="submit" value="送信" class="send"><img src="../images/send-button@2x.png"
+                        alt="sendボタン"></button>
                 <script type="text/javascript">
                     var submitted = false;
                 </script>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-                    onload="if(submitted)  {window.location='thanks.html';}"></iframe>
+                    onload="if(submitted)  {window.location='.thanks.html';}"></iframe>
             </div>
-            <button type="submit" class="send"><img src="../images/send-button@2x.png" alt="sendボタン"></button>
         </section>
 
     </main>

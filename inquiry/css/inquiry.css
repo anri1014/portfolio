@@ -41,11 +41,11 @@
 .inquiry .contact_content .contact_form form table tr:last-child td {
   padding-bottom: 0;
 }
-.inquiry .contact_content .send {
+.inquiry .contact_content .contact_form .send {
   display: block;
   width: 15vw;
   max-width: 200px;
-  margin: 0 auto 150px;
+  margin: 40px auto 150px;
 }
 @media screen and (max-width: 767px) {
   .inquiry .contact_content p {
@@ -69,11 +69,11 @@
     padding: 0 0 25px 0;
     font-size: 14px;
   }
-}
-.inquiry .contact_content .send {
-  width: 26.7vw;
-  min-width: 100px;
-  margin: 0 auto 100px;
+  .inquiry .contact_content .contact_form .send {
+    width: 26.7vw;
+    min-width: 100px;
+    margin: 20px auto 100px;
+  }
 }
 .inquiry footer .contact_btn {
   display: none;

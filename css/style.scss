@@ -109,7 +109,7 @@ header{
 .top{
     position: relative;
     .top_img{
-        width: 100vw;
+        width: 100%;
     }
     .top_logo{
         background: #000 no-repeat center;
@@ -181,29 +181,56 @@ header{
             }
         }
     }
-    .top_triangle, .top_circle, .top_closs, .top_square {
-        animation: neon 2s ease infinite;
-        -moz-animation: neon 2s ease infinite;
-        -webkit-animation: neon 2s ease infinite;
-      }
-      
-      @keyframes neon {
-        0%,
-        100% {
-          text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
-          color: #FED128;
-        }
-        50% {
-          text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
-          color: #806914;
-        }
-      }
-    .top_triangle{
+    #tri{
         position: absolute;
         top: 30.7%;
         left: 11.5%;
         transform: translate(-50%, -50%);
         width: 10vw;
+          .cls-2{
+             animation: blink 2s linear infinite;
+            }
+          .cls-3{
+            animation: neon 2s linear infinite;
+          }
+          @keyframes blink{ 
+            81%{
+              fill: #efe;
+            }
+            82%{
+              fill: #333;
+            }
+            83%{
+              fill: #efe;
+            }
+            92%{
+              fill: #333;
+            }
+            92.5%{
+              fill: #efe;
+            }
+           
+          }
+          
+          
+          @keyframes neon{
+            81%{
+              opacity: .3;
+            }
+             82%{
+              opacity: 0;
+            }
+              83%{
+              opacity: .3;
+            }
+               92%{
+              opacity: 0;
+            }
+                92.5%{
+              opacity: .3;
+            }
+          }
+          
     }
     .top_circle{
         position: absolute;
@@ -279,10 +306,10 @@ header{
             transform: translate(-50%, -50%);
             width: 66.6vw;
         }
-        .top_triangle, .top_circle, .top_closs, .top_square{
+        #tri, .top_circle, .top_closs, .top_square{
             width: 16.5vw;
         }
-        .top_triangle{
+        #tri{
             top: 20.1%;
             left: 18.7%;
         }

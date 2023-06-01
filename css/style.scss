@@ -181,55 +181,12 @@ header{
             }
         }
     }
-    #tri{
+    .top_triangle{
         position: absolute;
         top: 30.7%;
         left: 11.5%;
         transform: translate(-50%, -50%);
         width: 10vw;
-          .cls-2{
-             animation: blink 2s linear infinite;
-            }
-          .cls-3{
-            animation: neon 2s linear infinite;
-          }
-          @keyframes blink{ 
-            81%{
-              fill: #efe;
-            }
-            82%{
-              fill: #333;
-            }
-            83%{
-              fill: #efe;
-            }
-            92%{
-              fill: #333;
-            }
-            92.5%{
-              fill: #efe;
-            }
-           
-          }
-          
-          
-          @keyframes neon{
-            81%{
-              opacity: .3;
-            }
-             82%{
-              opacity: 0;
-            }
-              83%{
-              opacity: .3;
-            }
-               92%{
-              opacity: 0;
-            }
-                92.5%{
-              opacity: .3;
-            }
-          }
           
     }
     .top_circle{
@@ -241,7 +198,7 @@ header{
     }
     .top_closs{
         position: absolute;
-        bottom: 14.4%;
+        bottom: 2.3%;
         left: 34.8%;
         transform: translate(-50%, -50%);
         width: 10vw;
@@ -255,31 +212,99 @@ header{
     }
     .top_w{
         position: absolute;
-        bottom: 14.8%;
-        left: 58%;
+        bottom: 1%;
+        left: 57%;
         transform: translate(-50%, -50%);
-        width: 3.5vw;
+        width: 12vw;
+    }
+    #w{
+        .cls-1 {
+            stroke: #FFFFEF;
+            animation: blink 2s linear infinite;
+          }
+    
+          .cls-1, .cls-2 {
+            fill: none;
+            stroke-width: 1.5px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            
+          }
+    
+          .cls-3 {
+            opacity: .6;
+    animation: neon 2s linear infinite;
+          }
+    
+          .cls-4 {
+            opacity: .4;
+    animation: neon 2s linear infinite;
+          }
+    
+          .cls-2 {
+            stroke: #ff8c00;
+            stroke-width: 2px;
+            
+          }
+          @keyframes blink{ 
+      81%{
+        stroke: #FFFFEF;
+      }
+      82%{
+        stroke: #333;
+      }
+      83%{
+        stroke: #FFFFEF;
+      }
+      92%{
+        stroke: #333;
+      }
+      92.5%{
+        stroke: #FFFFEF;
+      }
+     
+    }
+    
+    
+    @keyframes neon{
+      81%{
+        opacity: .3;
+      }
+       82%{
+        opacity: 0;
+      }
+        83%{
+        opacity: .3;
+      }
+         92%{
+        opacity: 0;
+      }
+          92.5%{
+        opacity: .3;
+      }
+    }
+    
     }
     .top_a{
         position: absolute;
-        bottom: -3px;
-        left: 49.9%;
+        bottom: -15%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        width: 2.5vw;
+        width: 12vw;
     }
     .top_s{
         position: absolute;
-        bottom: 0%;
-        left: 57.4%;
+        bottom: -15.5%;
+        left: 57.5%;
         transform: translate(-50%, -50%);
-        width: 2vw;
+        width: 12vw;
     }
     .top_d{
         position: absolute;
-        bottom: 7px;
-        left: 65.3%;
+        bottom: -15%;
+        left: 65.5%;
         transform: translate(-50%, -50%);
-        width: 2vw;
+        width: 12vw;
     }
     .sp_top{
         display: none;

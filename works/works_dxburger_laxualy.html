@@ -5,39 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="フロントエンドプログラマー兼デザイナー志望の金政杏里（かねまさ あんり）のポートフォリオサイトです。">
-    <meta name="keywords" content="金政杏里,フロントエンド,プログラマー,デザイナー,Web,Programer,Designer">
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'umz6jaj',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
+    <title>LIFE｜PIECE OF</title>
+    <meta name="description" content="LIFEのデザインを制作しました。">
+    <meta name="keywords" content="金政杏里,フロントエンド,エンジニア,プログラマー,デザイナー,Web,Programer,Designer">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/silom" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../works/css/works_detail.css">
-    <title>PIECE OF</title>
 </head>
 
-<body>
+<body class="work">
     <header>
         <div class="header_inner">
-            <a class="header_logo" href="">
+            <a class="header_logo" href="./index.html">
                 <img src="../images/logo-icon@2x.png" alt="ロゴアイコン">
             </a>
-            <nav>
+            <nav class="pc_nav">
                 <ul>
-                    <li><a href="top">TOP</a></li>
-                    <li><a href="works">WORKS</a></li>
-                    <li><a href="skill">SKILL</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="../index.html">TOP</a></li>
+                    <li><a href="../works/index.html">WORKS</a></li>
+                    <li><a href="../index.html#skill">SKILL</a></li>
+                    <li><a href="../about/about.html">ABOUT</a></li>
+                    <li><a href="../inquiry/inquiry.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="../index.html">TOP</a></li>
+                    <li><a href="../works/index.html">WORKS</a></li>
+                    <li><a href="../index.html#skill">SKILL</a></li>
+                    <li><a href="../about/about.html">ABOUT</a></li>
+                    <li><a href="../inquiry/inquiry.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,27 +49,63 @@
     <main>
         <section class="detail">
             <h2>LIFE STYLE</h2>
-            <div class="work_img"><img src="../images/works-detail-life@2x.png" alt="LIFEのサイトのトップページ"></div>
+            <div class="work_img"><img src="../images/works-detail-laxualy@2x.png" alt="LIFEのサイトのトップページ"></div>
             <article class="detail_wrap">
                 <div class="detail_circle">
                     <ul>
-                        <li><img src="../images/works-detail-aboutmywork@2x.png" alt="aboutmy workのボタン"></li>
-                        <p class="btn_hover"><img src="../images/works-detail-aboutmywork-hover@2x.png"
-                                alt="aboutmy workのボタン"></p>
-                        <li><img src="../images/works-detail-process@2x.png" alt="processのボタン"></li>
-                        <li><img src="../images/works-detail-review@2x.png" alt="reviewのボタン"></li>
+                        <li data-id="tab01">
+                            <div class="btn_img"><img src="../images/works-detail-aboutmywork@2x.png"
+                                    alt="aboutmy workのボタン"></div>
+                            <p class="btn_hover"><img src="../images/works-detail-aboutmywork-hover@2x.png"
+                                    alt="aboutmy workのボタン"></p>
+                        </li>
+
+                        <li data-id="tab02">
+                            <div class="btn_img"><img src="../images/works-detail-process@2x.png" alt="processのボタン">
+                            </div>
+                            <p class="btn_hover"><img src="../images/works-detail-process-hover@2x.png"
+                                    alt="aboutmy workのボタン"></p>
+                        </li>
+                        <li data-id="tab03">
+                            <div class="btn_img"><img src="../images/works-detail-review@2x.png" alt="reviewのボタン"></div>
+                            <p class="btn_hover"><img src="../images/works-detail-review-hover@2x.png"
+                                    alt="aboutmy workのボタン"></p>
+                        </li>
                     </ul>
                 </div>
-                <div class="sammary">
-                    <div class="sammary_inner">
+                <div id="tab01" class="summary selected">
+                    <div class="summary_inner">
                         <div class="textarea">
-                            <div class="textarea_img"><img src="../images/works-detail-life-img@2x.png" alt=""></div>
                             <p class="textarea_text">
-                                １０周年の美容院のリニューアルサイトを作成しました。<br>
-                                幅広い年齢層がターゲットであることと、営業実績が長いことを考慮して、<br>POPで可愛らしいイメージよりは綺麗で洗練された大人っぽい可愛らしさを意識しました。<br>
-                                また、LIFE STYLEにあったスタイルを提供するお店ということだったので、<br>ナチュラルさ＝自然っぽさを感じれる写真を使用しています。<br>
-                                予約数・SNSフォロワーUPを目的としているのでいつでもリンクへ飛べるようにヘッダーにボタンを配置しました。<br>
-                                全体の色も大人しいピンクとグレーを使用し、見やすい配色にしています。
+                                スクールの課題でハンバーガーのバナーを2種類制作しました。<br>
+                                POP感を出したものと、高級感を出したものの2種類で、<br>
+                                どちらか一方は正方形、もう一方は長方形で制作との指定がありました。
+                                こちらは高級感verです。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab02" class="summary">
+                    <div class="summary_inner">
+                        <div class="textarea">
+                            <p class="textarea_text">
+                                POP verとは真逆に角っぽさを出すことを意識しました。<br>
+                                "NEW"の部分はゴールドでリッチ感を出しています。<br>
+                                配布されたハンバーガーの画像にもともとスモークがかかっていたので<br>
+                                それを利用して、ハンバーガーの存在感や重厚感を出しました。<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab03" class="summary">
+                    <div class="summary_inner">
+                        <div class="textarea">
+                            <p class="textarea_text">
+                                高級感を出すために余白を多めに取ったのですが、<br>
+                                その調整にとても苦戦しました。<br>
+                                空きすぎても貧相な感じになってしまうし、いいとことに各パーツを配置するのに<br>
+                                何度も修正しました。<br>
+                                "NEW"のゴールドもギラギラさせないために、ハイライトを少なめに入れるように工夫しました。<br>
                             </p>
                         </div>
                     </div>
@@ -81,17 +120,23 @@
             <div class="btn_click"><a><img src="../images/contact-btn-click@2x.png" alt="コンタクトボタン"></a></div>
         </div>
         <div class="footer_inner">
-            <div class="footer_logo"><img src="../images/logo@2x.png" alt="PIECE OFのロゴ"></div>
+            <a href="index.html" class="footer_logo"><img src="../images/logo@2x.png" alt="PIECE OFのロゴ"></a>
             <nav>
                 <ul>
-                    <li><a href="">TOP</a></li>
-                    <li><a href="">WORKS</a></li>
-                    <li><a href="">SKILL</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="../index.html">TOP</a></li>
+                    <li><a href="../works/index.html">WORKS</a></li>
+                    <li><a href="../index.html#skill">SKILL</a></li>
+                    <li><a href="../about/about.html">ABOUT</a></li>
+                    <li><a href="../inquiry/inquiry.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </footer>
 </body>
 

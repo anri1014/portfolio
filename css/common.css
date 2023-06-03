@@ -94,7 +94,7 @@ header .header_img {
     cursor: pointer;
   }
   .header_inner .sp_btn span {
-    position: relative;
+    position: absolute;
     top: 9px;
     display: block;
     width: 30px;
@@ -110,6 +110,7 @@ header .header_img {
     position: absolute;
     width: 30px;
     height: 2px;
+    left: -0.5px;
     border-radius: 1px;
     background-color: #f28704;
     border: solid 0.3px #fff;

@@ -4,7 +4,9 @@
 .about_content .img_wrap {
   position: relative;
   width: 100vw;
+  max-width: 1366px;
   height: 63vw;
+  margin: 0 auto;
 }
 .about_content .img_wrap .wrap_data {
   position: absolute;

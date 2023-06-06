@@ -91,7 +91,7 @@
 }
 .detail .detail_wrap .summary .summary_inner {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
   background-size: contain;
   background-position: center;
@@ -99,7 +99,7 @@
 }
 .detail .detail_wrap .summary .summary_inner .textarea {
   position: absolute;
-  top: 16%;
+  top: 25%;
   left: 50%;
   transform: translate(-34%, 0%);
 }

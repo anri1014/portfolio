@@ -6,8 +6,10 @@ $orange: #f28704;
     .works_inner{
         display: flex;
         flex-wrap: wrap;
+        gap: 20px;
         justify-content: space-around;
         width: 80%;
+        max-width: 1000px;
         margin: 0 auto 100px;
         .works_content{
             width: 400px;

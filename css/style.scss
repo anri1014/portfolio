@@ -331,10 +331,10 @@ header{
             transform: translate(-50%, -50%);
             width: 66.6vw;
         }
-        #tri, .top_circle, .top_closs, .top_square{
+        .top_triangle, .top_circle, .top_closs, .top_square{
             width: 16.5vw;
         }
-        #tri{
+        .top_triangle{
             top: 20.1%;
             left: 18.7%;
         }
@@ -379,8 +379,10 @@ header{
     .works_inner{
         display: flex;
         flex-wrap: wrap;
+        gap: 20px;
         justify-content: space-around;
         width: 80%;
+        max-width: 1000px;
         margin: 0 auto 100px;
         .works_content{
             width: 400px;

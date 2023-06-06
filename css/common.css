@@ -205,7 +205,7 @@ header .header_img {
 .footer_inner {
   display: flex;
   justify-content: space-between;
-  padding: 3.3vw 3.7vw 9.5vw;
+  padding: 3.3vw 3.7vw 7.5vw;
   background-color: #cbcbcb;
 }
 .footer_inner .footer_logo {

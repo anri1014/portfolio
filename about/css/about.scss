@@ -7,7 +7,9 @@ $orange: #f28704;
     .img_wrap{
         position: relative;
         width: 100vw;
+        max-width: 1366px;
         height: 63vw;
+        margin: 0 auto;
         .wrap_data{
             position: absolute;
             top: 0;
